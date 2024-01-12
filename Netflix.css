@@ -498,7 +498,7 @@ footer p{
 
     /* main Section */
     #main{
-        background-size: 250%;
+        background-size: 270%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -531,7 +531,7 @@ footer p{
         margin-bottom: 1rem;
     }
     #main>#input> button{
-        width: 57%;
+        width: 59%;
         font-size: 1.2rem;
         font-weight: 700;
     }
