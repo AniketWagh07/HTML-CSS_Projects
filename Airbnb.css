@@ -1,0 +1,741 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+#first{
+    background-color: #f7f7f7;
+    text-align: center;
+    height: 4rem;
+    box-shadow: inset 0 -1px 0 rgb(0,0,0,0.06);
+}
+#first> a{
+    display: block;
+    font-size: 1rem;
+    color: #222222;
+    padding-top: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+    text-underline-offset: 2px;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+header> #second{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.118);
+    background-color: white;
+}
+header> #second> img{
+    width: 105px;
+    height: 2rem;
+}
+header> #second> #search-btn{
+    height: 3rem;
+    width: 25%;
+    border-radius: 40px;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    margin-left: 10rem;
+}
+header> #second> #search-btn> button{
+    width: 27%;
+    border: none;
+    background: transparent;
+    border-right: 1px solid #dddddd;
+    font-size: 14px;
+    color: black;
+    width: 30%;
+    padding: 0;
+}
+header> #second> #search-btn> .lastBtn{
+    border: none;
+    color: #717171;
+    padding: 0;
+    font-weight: normal;
+}
+#search-icon{
+    background-color: #ff385c;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+header> #second> #second-3{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+header> #second> #second-3> a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+}
+header> #second> #second-3> button{
+    width: 85px;
+    height: 3rem;
+    border: 1px solid #dddddd;
+    border-radius: 40px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+}
+button{
+    cursor: pointer;
+}
+
+/* view-filter section */
+#view-filter{
+    display: flex;
+    padding: 0 5rem;
+    padding-top: 1.7rem;
+    padding-bottom: 0.5rem;
+    background-color: white;
+    gap: 4.5%;
+}
+#view-filter> #filter-icon{
+    display: flex;
+    gap: 2.5rem;
+}
+#view-filter> #filter-icon div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 6px;
+    position: relative; 
+    
+}
+#view-filter> #filter-icon> div:first-child{
+    border-bottom: 3px solid black;
+}
+#view-filter> #filter-icon> div:first-child> img, #view-filter> #filter-icon> div:first-child> p{
+    opacity: 1;
+    color: black;
+}
+#view-filter> #filter-icon div:hover{
+    border-bottom: 3px solid #dddddd;
+}
+#view-filter> #filter-icon div:hover img, #view-filter> #filter-icon div:hover p{
+    opacity: 1;
+    color: #222222;
+}
+#view-filter> #filter-icon img{
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0.6425339366515838;
+}
+#view-filter> #filter-icon p{
+    font-size: 12px;
+    color: #717171;
+    font-weight: 600;
+    margin: 0.5rem 0rem;
+}
+
+#view-filter> #filter-btns{
+    background-color: white;
+    width: 26%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 11.5%;
+    right: 5%;
+}
+#view-filter> #filter-btns> #angle-icon{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 0.5px solid rgb(0 0 0/0.3);
+    background: transparent;
+    font-size: 12px;
+    color: black;
+}
+#view-filter> #filter-btns> #filters{
+    width: 25%;
+    height: 3rem;
+    border: 1px solid rgb(0 0 0/0.3);
+    border-radius: 10px;
+    background: transparent;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.715);
+    font-weight: 600;
+}
+#view-filter> #filter-btns> #filters> i{
+    font-size: 0.9rem;
+    padding-right: 8px;
+}
+#view-filter> #filter-btns> #taxes{
+    max-width: 52%;
+    height: 2.9rem;
+    border: 1px solid rgb(0 0 0/0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 12px;
+    color: rgba(0, 0, 0, 0.701);
+}
+#view-filter> #filter-btns> #taxes> i{
+    font-size: 2rem;
+}
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 36px; /* Set the width */
+    height: 24px; /* Set the height */
+}
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a2a1a1;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color:black;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+/* Rounded edges */
+.slider.round {
+    border-radius: 36px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* #cards Section */
+#cards{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+}
+#container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#container> div{
+    max-width: 23.5%;
+    height: 407.7px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+#container> div> img{
+    width: 100%;
+    height: 305.7px;
+    object-fit: cover;
+    border-radius: 3%;
+    transition: 1s;
+}
+#container> div> img:hover{
+    transform: scale(1.03);
+}
+#container> div h4{
+    margin: 0;
+    padding-top: 5px;
+    font-weight: 550;
+}
+#container> div> p{
+    margin: 0;
+    padding-top: 5px;
+    color: rgb(118, 118, 118);
+}
+.h4{
+    display: flex;
+    justify-content: space-between;
+}
+#container> div> i{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.3rem;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: white
+}
+#container> div span{
+    color: rgba(34, 34, 34, 0.84);
+    font-weight: 400;
+}
+#cards> #more-cards{
+    text-align: center;
+}
+#cards> #more-cards> h2{
+    font-size: 18px;
+    color: #222222;
+    margin: 0;
+}
+#cards> #more-cards> button{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #222222;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* inspiration Section */
+#inspiration{
+    background-color: #f7f7f7;
+    padding: 3rem 5rem;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.118);
+}
+#inspiration> h2{
+    font-size: 22px;
+    color: #222222;
+    margin: 0 0 1rem;
+    font-weight: 600;
+}
+#inspiration a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #222222;
+}
+#inspiration> #category{
+    display: flex;
+    gap: 2.1rem;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.118);
+    padding-bottom: 2px;
+}
+#inspiration> #category> a{
+    padding-bottom: 0.9rem;
+    color: #717171;
+    font-size: 0.875rem;
+}
+#inspiration> #category> a:first-child{
+    color: #222222;
+    border-bottom: 2px solid #222222;
+}
+#inspiration> #rentals{
+    padding: 0;
+}
+#inspiration> #rentals> ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#inspiration> #rentals> ul> li{
+    width: 16.5%;
+    font-size: 14px;
+    color: #222222;
+    padding-top: 1.5rem;
+}
+#inspiration> #rentals> ul> li> a> span{
+    display: block;
+    color: #717171bc;
+}
+
+/* Footer Section */
+footer{
+    background-color: #f7f7f7;
+    padding: 3rem 5rem;
+}
+footer> #upper-footer{
+    display: flex;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.118);
+    padding-bottom: 3rem;
+}
+footer> #upper-footer> div{
+    width: 33%;
+}
+footer> #upper-footer> div> h4{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 600;
+    margin: 0;
+}
+footer> #upper-footer> div> ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer> #upper-footer> div> ul> li{
+    margin-top: 12px;
+}
+footer a{
+    text-decoration: none;
+    color: #222222c0;
+    font-size: 14px;
+    font-weight: normal;
+}
+footer a:hover{
+    text-decoration: underline #222222;
+    
+}
+footer> #down-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+footer> #down-footer> #down-left{
+    display: flex;
+    gap: 7px;
+}
+footer> #down-footer> #down-left> p{
+    margin: 0;
+    color: #222222c0;
+    font-size: 14px;
+}
+footer> #down-footer> #down-right{
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    width: 22%;
+}
+footer> #down-footer> #down-right> button{
+    font-size: 14px;
+    color: #222222;
+    border: none;
+    background: transparent;
+}
+footer> #down-footer> #down-right> a{
+    font-size: 14px;
+    color: #222222;
+}
+footer> #down-footer> #down-right> a> i{
+    font-size: 1.5rem;
+}
+
+#mobile{
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1150px){
+    header> #second{
+        padding: 0 2.5rem;
+    }
+    header> #second> #search-btn{
+        width: 31%;
+    }
+
+    /* #view-filter Section */
+    #view-filter{
+        padding: 0 2.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 7px;
+    }
+    #view-filter> #filter-icon{
+        gap: 5%;
+    }
+    
+    #view-filter> #filter-btns{
+        width: 38%;
+        gap: 1rem;
+        bottom: 7.5%;
+        padding: 1rem 0;
+    }
+
+    /* #cards Section */
+    #cards{
+        padding: 1rem 2.5rem;
+    }
+    #container> div{
+        max-width: 31.7%;
+    }
+
+    #inspiration{
+        padding: 3rem 2.5rem;
+    }
+    
+    /* #footer Section */
+    footer{
+        padding: 3rem 2.5rem;
+    }
+    footer> #down-footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    footer> #down-footer> #down-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer> #down-footer> #down-right{
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    footer> #down-footer> #down-right> a> i{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 767px){
+    header> #second{
+        justify-content: left;
+        padding: 0 2.5rem;
+        gap: 1rem;
+    }
+    header> #second> #search-btn{
+        width: 39%;
+        margin: 0;
+    }
+    header> #second> #second-3{
+        gap: 1rem;
+    }
+    header> #second> #second-3> a{
+        text-decoration: none;
+        color: #222222;
+        font-size: 15px;
+    }
+
+    /* #view-filter Section */
+    #view-filter{
+        padding: 0 2.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 7px;
+    }
+    #view-filter> #filter-icon{
+        gap: 5%;
+        overflow-x: scroll;
+    }
+    #view-filter> #filter-btns{
+        justify-content: flex-start;
+        width: 19%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    #view-filter> #filter-btns> #filters{
+        width: 83%;
+    }
+    #view-filter> #filter-btns> #taxes{
+        display: none;
+    }
+
+    /* #cards Section */
+    #cards{
+        padding: 1rem 2.5rem;
+    }
+    #container> div{
+        max-width: 48.8%;
+    }
+
+    /* inspiration Section */
+    #inspiration{
+        padding: 3rem 2.5rem;
+    }
+    #inspiration> #category{
+        overflow-x: scroll;
+    }
+    #inspiration> #rentals> ul> li{
+        width: 45%;
+    }
+    
+    /* #footer Section */
+    footer{
+        padding: 1rem 2.5rem;
+    }
+    footer> #upper-footer{
+        flex-direction: column;
+        box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.118);
+        padding-bottom: 0rem;
+    }
+    footer> #upper-footer> div{
+        width: 100%;
+        padding: 1.5rem 0;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.118);
+    }
+    footer> #down-footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    footer> #down-footer> #down-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer> #down-footer> #down-right{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    footer> #down-footer> #down-right> a> i{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 450px){
+    #first{
+        display: none;
+    }
+    header> #second{
+        padding: 0 1.5rem;
+        box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.118);
+    }
+    header> #second> img, header> #second> #second-3{
+        display: none;
+    }
+    header> #second> #search-btn{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* #view-filter Section */
+    #view-filter{
+        padding: 0 0.5rem;
+        padding-top: 0rem;
+        padding-bottom: 7px;
+    }
+    #view-filter> #filter-icon{
+        gap: 5%;
+        overflow-x: scroll;
+    }
+    #view-filter> #filter-btns{
+        display: none;
+    }
+
+    /* #cards Section */
+    #cards{
+        padding: 1rem 1.5rem;
+    }
+    #container> div{
+        max-width: 100%;
+    }
+    #container> div> img{
+        width: 100%;
+    }
+
+    /* inspiration Section */
+    #inspiration{
+        padding: 3rem 1.5rem;
+    }
+    #inspiration> #category{
+        overflow-x: scroll;
+    }
+    #inspiration> #rentals> ul> li{
+        width: 45%;
+    }
+    
+    /* #footer Section */
+    footer{
+        padding: 1rem 1.5rem;
+    }
+    footer> #upper-footer{
+        flex-direction: column;
+        box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.118);
+        padding-bottom: 0rem;
+    }
+    footer> #upper-footer> div{
+        width: 100%;
+        padding: 1.5rem 0;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.118);
+    }
+    footer> #down-footer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    footer> #down-footer> #down-left{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7px;
+    }
+    footer> #down-footer> #down-right{
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+        
+    }
+    footer> #down-footer> #down-right> a> i{
+        display: none;
+    }
+
+    #mobile{
+        display: block;
+        position: sticky;
+        bottom: 0%;
+        left: 0%;
+        background-color: white;
+        padding: 1rem 0;
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.118);
+    }
+    #mobile> div{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile> div> a{
+        text-decoration: none;
+        text-align: center;
+        width: 30%;
+        color: #717171;
+    }
+    #mobile> div> a:first-child{
+        color: #e81948;
+    }
+    #mobile> div> a> i{
+        font-size: 1.5rem;
+    }
+    #mobile> div> a> p{
+        margin: 0;
+        margin-top: 7px;
+        font-size: 10px;
+    }
+    
+}
