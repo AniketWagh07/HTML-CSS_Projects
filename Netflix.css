@@ -463,7 +463,7 @@ footer p{
         padding: 1.5rem 1.5rem;
     }
     #left> img{
-        width: 93%;
+        width: 90%;
         height: 1.8rem;
     }
     #right{
@@ -498,7 +498,7 @@ footer p{
 
     /* main Section */
     #main{
-        background-size: 220%;
+        background-size: 230%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -531,7 +531,7 @@ footer p{
         margin-bottom: 1rem;
     }
     #main>#input> button{
-        width: 54%;
+        width: 57%;
         font-size: 1.2rem;
         font-weight: 700;
     }
