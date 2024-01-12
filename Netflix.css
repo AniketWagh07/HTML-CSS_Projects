@@ -498,7 +498,7 @@ footer p{
 
     /* main Section */
     #main{
-        background-size: 230%;
+        background-size: 250%;
         display: flex;
         flex-direction: column;
         justify-content: center;
