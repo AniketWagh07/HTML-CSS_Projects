@@ -1,0 +1,398 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.5rem;
+    background-color: #363636;
+}
+nav> #left> h2{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+nav> #right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav> #right> a{
+    text-decoration: none;
+    color: #96a09a;
+    font-size: 1.2rem;
+    transition: ease-in-out 1s;
+}
+nav> #right> a:hover{
+    text-decoration: 0.5px underline white;
+}
+
+/* Intro section */
+#intro{
+    /* height: 93vh; */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./LandScaper_photos/intro-bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#intro> div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    color: white;
+    padding: 15rem 0 7rem;
+}
+#intro> div> h1{
+    margin: 6rem 0 0 0;
+    font-size: 4rem;
+}
+#intro> div> p{
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #dbdfdd;
+}
+#intro> div> button{
+    padding: 1rem 1.3rem;
+    margin-top: 3rem;
+    color: white;
+    background-color: #69ad31;
+    border: none;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+/* care section */
+#care{
+    width: 85%;
+    margin: auto;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+#care> #care-left{
+    width: 45%;
+}
+#care> #care-left> h2{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+#care> #care-left> hr{
+    width: 4rem;
+    height: 3px;
+    background-color: #69ad31;
+    border: none;
+    margin: 0;
+}
+#care> #care-left> h2> span{
+    color: #69ad52;
+}
+#care> #care-left> p{
+    margin-top: 2.5rem;
+    color: #7c8891;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+#care> #care-left> button{
+    color: white;
+    border: none;
+    padding: 1rem 1.3rem;
+    background-color: #69ad31;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    margin-top: 2.3rem;
+}
+#care> #care-right{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+#care> #care-right> div{
+    width: 46%;
+}
+#care> #care-right> div> img{
+    width: 100%;
+    height: 15rem;
+}
+#care> #care-right> div> h3{
+    margin: 0.9rem 0 0.7rem 0;
+    font-size: 1.5rem;
+}
+#care> #care-right> div> p{
+    color: #7c8891;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+/* Services Section  */
+#services{
+    background-color: #69ad31;
+    padding: 5rem 0 7rem;
+}
+#services> div{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+#services> div> h2{
+    font-size: 2.6rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+#services> div> hr{
+    width: 4rem;
+    height: 3px;
+    background-color: #bbdaa2;
+    border: none;
+}
+#services> div> p{
+    color: #cbf4aa;
+    font-size: 1.3rem;
+}
+#services> div> #service-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5rem;
+}
+#services> div> #service-card> div> img{
+    width: 70%;
+    border-radius: 50%;
+    border: 0.75rem solid #78b546;
+}
+#services> div> #service-card> div{
+    color: white;
+}
+#services> div> #service-card> div> h3{
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+#services> div> #service-card> div> p{
+    width: 80%;
+    margin: auto;
+    margin-top: 0.9rem;
+    color: #cbf4aa;
+}
+
+
+/* Gallery Section  */
+#gallery{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 6rem 0;
+}
+#gallery> h3{
+    font-size: 2.6rem;
+    color: black;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+}
+#gallery> hr{
+    width: 4.5rem;
+    height: 4px;
+    background-color: #69ad31;
+    border: none;
+}
+#gallery> p{
+    color: #8f8d93;
+    font-size: 1.3rem;
+}
+#gallery> #buttons{
+    margin: 4rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#gallery> #buttons> button{
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #7e7c81;
+    background-color: #e5e5e5;
+}
+#gallery> #buttons> button:first-child{
+    background-color: #69ad31;
+    color: white;
+}
+#gallery> #img-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gallery> #img-gallery> img{
+    width: 31.5%;
+    margin-bottom: 2rem;
+}
+
+/* testimonials Section  */
+#testimonials{
+    background-image: linear-gradient(rgba(105, 173, 49, 0.85), rgba(105, 173, 49, 0.85)), url(./LandScaper_photos/testimonials-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 7rem 0;
+    color: white;
+}
+#testimonials> h2{
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: 0 0 0.9rem;
+}
+#testimonials> hr{
+    width: 4.5rem;
+    height: 3px;
+    background-color: #bbdaa2;
+    border: none;
+}
+#testimonials> pre{
+    font-size: 1rem;
+    margin: 4rem 0 1rem;
+    color: #cbf4aa;
+    font-weight: 700;
+    line-height: 1.7rem;
+    word-spacing: 0px;
+}
+#testimonials>#test-buttons> button{
+    border: none;
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    background-color: #abce86;
+    cursor: pointer;
+}
+#testimonials>#test-buttons> button:first-child{
+    background-color: white;
+}
+
+/* contact Section  */
+#contact{
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #f6f6f6;
+}
+#contact> h3{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 0 0 0.9rem;
+}
+#contact> hr{
+    width: 4.5rem;
+    height: 3px;
+    background-color: #69ad31;
+    border: none;
+}
+#contact> p{
+    color: #8f8d93;
+    font-size: 1.3rem;
+}
+#contact> #info{
+    width: 53%;
+    margin: 6rem auto 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#contact> #info>div> h5{
+    font-size: 1.2rem;
+    color: #363636;
+    margin: 0;
+}
+#contact> #info>div> hr{
+    width: 4.5rem;
+    height: 2.5px;
+    background-color: #bdbfc2;
+    border: none;
+}
+#contact> #info>div> p{
+    color: #8f8d93;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+#contact> h5{
+    font-size: 1.2rem;
+    color: #363636;
+    margin: 0 0 2rem;
+}
+#contact> form{
+    width: 48%;
+    margin: auto;
+}
+#contact> form> div{
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    margin-bottom: 1rem;
+}
+#contact> form>div> input{
+    width: 49%;
+    padding: 0.8rem 0 0.6rem 1rem;
+    border: 1px solid #bdbfc2;
+    font-size: 1rem;
+}
+#contact> form>div> input::placeholder, #contact> form> textarea::placeholder{
+    color: #8d8d8d;
+}
+#contact> form> textarea{
+    width: 97.5%;
+    padding: 1.3rem 0 0 1.2rem;
+    font-size: 1.1rem;
+    color: #8d8d8d;
+    border: 1px solid #bdbfc2;
+}
+#contact> form> button{
+    color: white;
+    border: none;
+    padding: 1rem 1.3rem;
+    background-color: #69ad31;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+/* footer Section  */
+footer{
+    background-color: #363636;
+    text-align: center;
+    padding: 2.5rem 0 1.5rem;
+}
+footer> div{
+    display: flex;
+    justify-content: center;
+    gap: 2.7rem;
+    margin-bottom: 3rem;
+}
+footer> div> a{
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: #464646;
+}
+footer> div> a:first-child{
+    padding: 0.8rem 1rem;
+}
+footer> div> a> i{
+    font-size: 1.1rem;
+    color: #69ad31;
+}
+footer> p{
+    color: #5d5b5b;
+    font-size: 1.1rem;
+}
